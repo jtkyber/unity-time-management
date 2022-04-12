@@ -58,8 +58,8 @@ code {
   padding: 0 2rem 0 2rem;
   z-index: 100;
   background-color: #30a7a9;
-  -webkit-box-shadow: 0 0.2rem 1.2rem 0.5rem rgba(17, 59, 60, 0.3);
-          box-shadow: 0 0.2rem 1.2rem 0.5rem rgba(17, 59, 60, 0.3);
+  -webkit-box-shadow: 0 0.1rem 1.2rem 0.5rem rgba(17, 59, 60, 0.3);
+          box-shadow: 0 0.1rem 1.2rem 0.5rem rgba(17, 59, 60, 0.3);
 }
 
 .navBar .navLeft {
@@ -127,7 +127,7 @@ code {
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 .introContainer .introTextContainer {
