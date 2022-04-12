@@ -16,6 +16,7 @@
         background: url('../assets/introBg.jpg');
         background-position: center;
         background-size: cover;
+        background-repeat: no-repeat;
         z-index: -1;
         opacity: 0.5;
     }
@@ -25,10 +26,11 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        white-space: pre-line;
-
+        padding: 2rem 0 2rem 0;
+        
         h1 {
-            font-size: 3rem;
+            white-space: pre-line;
+            font-size: 2.5rem;
             font-weight: 800;
             width: 100%;
             color: rgba($color: #403B7C, $alpha: 1.0);
@@ -41,6 +43,7 @@
         display: flex;
         justify-content: flex-end;
         align-self: center;
+        padding: 2rem 0 2rem 0;
         
         img {
             width: 90%;
