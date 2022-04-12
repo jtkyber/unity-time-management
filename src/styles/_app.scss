@@ -1,10 +1,7 @@
 .appContainer {
     width: 100vw;
-    // max-width: 80rem;
     height: 100vh;
     margin: auto;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
+    display: block;
     overflow-x: hidden;
 }

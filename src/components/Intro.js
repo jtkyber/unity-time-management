@@ -6,7 +6,7 @@ const Intro = () => {
         <div className='introContainer'>
             <div className='introBgContainer'></div>
             <div className='introTextContainer'>
-                <h1>Work smarter{"\n"}Not harder{"\n"}With the Unity{"\n"}Time management{"\n"}Tool</h1>
+                <h1>Work <span>smarter</span>{"\n"}not harder{"\n"}with the Unity{"\n"}<span>time</span> management{"\n"}tool</h1>
             </div>
             <div className='introPicContainer'>
                 <img src={calendarImg} alt='calendar'></img>

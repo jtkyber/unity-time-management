@@ -1,25 +1,26 @@
 import React, { useRef } from 'react';
+import d2lPic from '../assets/d2l.png';
 
 const Companies = () => {
     const marqueeContainerRef = useRef(null);
 
     return (
         <div className='companiesContainer'>
-            <h2>Trusted by students{'\n'}Nationwide</h2>
+            <h1>Trusted by students{'\n'}Nationwide</h1>
             <div ref={marqueeContainerRef} className='marqueeContainer'>
                 <div className='marquee'>
-                    <h2>Company 1</h2>
-                    <h2>Company 2</h2>
-                    <h2>Company 3</h2>
-                    <h2>Company 4</h2>
-                    <h2>Company 5</h2>
+                    <img src={d2lPic} alt='D2L'></img>
+                    <img src={d2lPic} alt='D2L'></img>
+                    <img src={d2lPic} alt='D2L'></img>
+                    <img src={d2lPic} alt='D2L'></img>
+                    <img src={d2lPic} alt='D2L'></img>
                 </div>
                 <div className='marquee'>
-                    <h2>Company 1</h2>
-                    <h2>Company 2</h2>
-                    <h2>Company 3</h2>
-                    <h2>Company 4</h2>
-                    <h2>Company 5</h2>
+                    <img src={d2lPic} alt='D2L'></img>
+                    <img src={d2lPic} alt='D2L'></img>
+                    <img src={d2lPic} alt='D2L'></img>
+                    <img src={d2lPic} alt='D2L'></img>
+                    <img src={d2lPic} alt='D2L'></img>
                 </div>
             </div>
         </div>
