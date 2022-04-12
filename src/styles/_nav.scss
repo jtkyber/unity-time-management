@@ -1,0 +1,42 @@
+.navBar {
+    width: 100%;
+    min-height: 5rem;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 0 2rem 0 2rem;
+    z-index: 100;
+    background-color: rgba($color: #30A7A9, $alpha: 1.0);
+    
+    .navLeft {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+
+        .title {
+            color: white;
+            font-size: 2rem;
+        }
+    }
+
+    .navRight {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+        .getStartedBtn {
+            width: 9rem;
+            height: 3rem;
+            border: none;
+            border-radius: 2rem;
+            cursor: pointer;
+            transition: opacity 0.2s;
+
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+    }
+}
