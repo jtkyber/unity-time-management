@@ -19,7 +19,8 @@ const Nav = () => {
 
     const changeNavStyle = () => {
         const newIntroTop = introContainerRef.current.getBoundingClientRect().top;
-        navRef.current.classList.toggle('scrolled', newIntroTop < introTop);
+        const isScrolled = (newIntroTop < introTop) && newIntroTop <= 0;
+        navRef.current.classList.toggle('scrolled', isScrolled);
         
         setIntroTop(newIntroTop);
 
