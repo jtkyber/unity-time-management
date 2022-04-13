@@ -43,6 +43,7 @@ $transitionTime: 0.2s;
             border-radius: 2rem;
             cursor: pointer;
             background-color: rgba($color: #ffffff, $alpha: 1.0);
+            transition: opacity 0.2s;
             // background-color: rgba($color: #30A7A9, $alpha: 1.0);
 
             h3 {

@@ -103,6 +103,8 @@ code {
   border-radius: 2rem;
   cursor: pointer;
   background-color: white;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
 }
 
 .navBar .navRight .getStartedBtn h3 {
