@@ -20,9 +20,14 @@ const Nav = () => {
     const changeNavStyle = () => {
         const newIntroTop = introContainerRef.current.getBoundingClientRect().top;
         const isScrolled = (newIntroTop < introTop) && newIntroTop <= 0;
-        navRef.current.classList.toggle('scrolled', isScrolled);
+
+        if (Math.abs(newIntroTop - introTop) > 20) {
+            navRef.current.classList.toggle('scrolled', isScrolled);
+            setIntroTop(newIntroTop);
+        }
+
+        // navRef.current.classList.toggle('scrolled', isScrolled);
         
-        setIntroTop(newIntroTop);
 
         // const isScrolled = introContainerRef.current.getBoundingClientRect().top < navRef.current.getBoundingClientRect().height - 5;
         // navRef.current.classList.toggle('scrolled', isScrolled);
