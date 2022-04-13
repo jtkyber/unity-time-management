@@ -33,6 +33,8 @@ code {
     monospace;
 }
 
+$navHeight: 6rem;
+
 @mixin alignAbs {
     position: absolute;
     left: 0;

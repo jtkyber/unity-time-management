@@ -1,4 +1,3 @@
-import React from 'react';
 import calendarImg from '../assets/calendar2.png';
 
 const Intro = () => {

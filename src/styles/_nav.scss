@@ -1,6 +1,8 @@
+$transitionTime: 0.3s;
+
 .navBar {
     width: 100%;
-    height: 5rem;
+    height: $navHeight;
     position: sticky;
     top: 0;
     display: flex;
@@ -9,7 +11,12 @@
     padding: 0 2rem 0 2rem;
     z-index: 100;
     background-color: rgba($color: #30A7A9, $alpha: 1.0);
-    box-shadow: 0 0.1rem 1.2rem 0.5rem rgba($color: #113b3c, $alpha: 0.3);
+    // background-color: rgba($color: #ffffff, $alpha: 1.0);
+    transition: transform $transitionTime;
+
+    &.scrolled {
+        transform: translateY(-100%);
+    }
     
     .navLeft {
         width: 100%;
@@ -18,7 +25,9 @@
 
         .title {
             color: white;
+            // color: rgba($color: #30A7A9, $alpha: 1.0);
             font-size: 2rem;
+            transition: color $transitionTime;
         }
     }
 
@@ -33,7 +42,13 @@
             border: none;
             border-radius: 2rem;
             cursor: pointer;
-            transition: opacity 0.2s;
+            background-color: rgba($color: #ffffff, $alpha: 1.0);
+            // background-color: rgba($color: #30A7A9, $alpha: 1.0);
+
+            h3 {
+                color: black;
+                // color: white;
+            }
 
             &:hover {
                 opacity: 0.6;

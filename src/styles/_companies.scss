@@ -5,7 +5,7 @@
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-    padding: 4rem 2rem;
+    padding: 6rem 2rem;
     background-color: rgba($color: #daf6f6, $alpha: 0.2);
     gap: 4rem;
 
@@ -52,7 +52,7 @@
 
 @media screen and (max-width: 768px) {
     .companiesContainer {
-        padding: 4rem 1rem;
+        padding: 6rem 1rem;
     
         h1 {
             font-size: 2rem;
