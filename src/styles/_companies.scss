@@ -18,8 +18,8 @@
     }
 
     .marqueeContainer {
-        width: 95%;
-        max-width: 80rem;
+        width: 80rem;
+        max-width: 100%;
         height: max-content;
         display: flex;
         justify-content: flex-start;
@@ -55,7 +55,7 @@
 
 @media screen and (max-width: 768px) {
     .companiesContainer {
-        padding: 6rem 1rem;
+        padding: 6rem 0;
     
         h1 {
             font-size: 2rem;

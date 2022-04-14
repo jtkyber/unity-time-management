@@ -270,8 +270,8 @@ code {
 }
 
 .companiesContainer .marqueeContainer {
-  width: 95%;
-  max-width: 80rem;
+  width: 80rem;
+  max-width: 100%;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -344,7 +344,7 @@ code {
 
 @media screen and (max-width: 768px) {
   .companiesContainer {
-    padding: 6rem 1rem;
+    padding: 6rem 0;
   }
   .companiesContainer h1 {
     font-size: 2rem;
