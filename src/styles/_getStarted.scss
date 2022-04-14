@@ -1,0 +1,41 @@
+.getStartedContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: $getStartedHeight;
+    width: 100%;
+    background-color: rgba($color: #D7E4E4, $alpha: 1.0);
+    gap: 2rem;
+
+
+    .getStartedForm {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 0.8rem;
+        border: 2px solid black;
+        border-radius: 1rem;
+        padding: 4rem 4rem;
+        height: max-content;
+        max-height: 90%;
+        width: 40rem;
+        max-width: 90%;
+        overflow: auto;
+
+        h1 {
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        input {
+            padding: 0.5rem 1rem;
+            width: 100%;
+        }
+
+        label {
+            font-size: 1.5rem;
+        }
+    }
+}

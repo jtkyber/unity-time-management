@@ -32,12 +32,15 @@
             display: flex;
             flex-flow: row nowrap;
             justify-content: center;
-            animation: marquee 20s linear infinite;
+
+            &.marqueeAnimation {
+                animation: marquee 15s linear infinite;
+            }
 
             img {
                 height: 4rem;
                 width: auto;
-                margin: 0 2rem;
+                margin: 0 3rem;
                 filter: grayscale(1);
                 opacity: 0.6;
             }

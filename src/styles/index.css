@@ -23,7 +23,7 @@ body {
   src: url("../assets/Gilroy-Light.otf");
 }
 
-button * {
+button *, label {
   font-family: GilroyLight;
 }
 
@@ -58,15 +58,19 @@ code {
   padding: 0 2rem 0 2rem;
   z-index: 100;
   background-color: #30a7a9;
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
-  transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s;
+  -webkit-transition: background-color 0.2s, -webkit-transform 0.2s;
+  transition: background-color 0.2s, -webkit-transform 0.2s;
+  transition: transform 0.2s, background-color 0.2s;
+  transition: transform 0.2s, background-color 0.2s, -webkit-transform 0.2s;
 }
 
 .navBar.scrolled {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
+}
+
+.navBar.notAtTop {
+  background-color: rgba(48, 167, 169, 0.6);
 }
 
 .navBar .navLeft {
@@ -300,14 +304,17 @@ code {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-animation: marquee 20s linear infinite;
-          animation: marquee 20s linear infinite;
+}
+
+.companiesContainer .marqueeContainer .marquee.marqueeAnimation {
+  -webkit-animation: marquee 15s linear infinite;
+          animation: marquee 15s linear infinite;
 }
 
 .companiesContainer .marqueeContainer .marquee img {
   height: 4rem;
   width: auto;
-  margin: 0 2rem;
+  margin: 0 3rem;
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
   opacity: 0.6;
@@ -389,5 +396,66 @@ code {
   font-size: 1.5rem;
   text-align: center;
   line-height: 2rem;
+}
+
+.getStartedContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: calc(100vh - 6rem);
+  width: 100%;
+  background-color: #d7e4e4;
+  gap: 2rem;
+}
+
+.getStartedContainer .getStartedForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.8rem;
+  border: 2px solid black;
+  border-radius: 1rem;
+  padding: 4rem 4rem;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  max-height: 90%;
+  width: 40rem;
+  max-width: 90%;
+  overflow: auto;
+}
+
+.getStartedContainer .getStartedForm h1 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.getStartedContainer .getStartedForm input {
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+
+.getStartedContainer .getStartedForm label {
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=index.css.map */

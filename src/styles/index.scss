@@ -24,7 +24,7 @@ body {
   src: url('../assets/Gilroy-Light.otf');
 }
 
-button * {
+button *, label {
   font-family: GilroyLight;
 }
 
@@ -34,6 +34,7 @@ code {
 }
 
 $navHeight: 6rem;
+$getStartedHeight: calc(100vh - 6rem);
 
 @mixin alignAbs {
     position: absolute;
@@ -48,3 +49,4 @@ $navHeight: 6rem;
 @import './intro';
 @import './companies';
 @import './about';
+@import './getStarted';

@@ -11,11 +11,14 @@ $transitionTime: 0.2s;
     padding: 0 2rem 0 2rem;
     z-index: 100;
     background-color: rgba($color: #30A7A9, $alpha: 1.0);
-    // background-color: rgba($color: #ffffff, $alpha: 1.0);
-    transition: transform $transitionTime;
+    transition: transform $transitionTime, background-color $transitionTime;
 
     &.scrolled {
         transform: translateY(-100%);
+    }
+
+    &.notAtTop {
+        background-color: rgba($color: #30A7A9, $alpha: 0.6);
     }
     
     .navLeft {
@@ -25,7 +28,6 @@ $transitionTime: 0.2s;
 
         .title {
             color: white;
-            // color: rgba($color: #30A7A9, $alpha: 1.0);
             font-size: 2rem;
             transition: color $transitionTime;
         }
@@ -44,11 +46,9 @@ $transitionTime: 0.2s;
             cursor: pointer;
             background-color: rgba($color: #ffffff, $alpha: 1.0);
             transition: opacity 0.2s;
-            // background-color: rgba($color: #30A7A9, $alpha: 1.0);
 
             h3 {
                 color: black;
-                // color: white;
             }
 
             &:hover {
