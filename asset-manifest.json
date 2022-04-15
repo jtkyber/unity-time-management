@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/unity-time-management/static/css/main.27382e68.css",
-    "main.js": "/unity-time-management/static/js/main.c1087199.js",
+    "main.css": "/unity-time-management/static/css/main.638a64ce.css",
+    "main.js": "/unity-time-management/static/js/main.11f8d36d.js",
     "static/js/787.ccc61277.chunk.js": "/unity-time-management/static/js/787.ccc61277.chunk.js",
     "static/media/introBg.jpg": "/unity-time-management/static/media/introBg.adc9dbe6481c20081ecc.jpg",
     "static/media/calendar2.png": "/unity-time-management/static/media/calendar2.d0ce59b0c4d7190ac74f.png",
@@ -10,14 +10,15 @@
     "static/media/Gilroy-ExtraBold.otf": "/unity-time-management/static/media/Gilroy-ExtraBold.0094146a0505298ed06a.otf",
     "static/media/Gilroy-Light.otf": "/unity-time-management/static/media/Gilroy-Light.cc7ab55d27205bd64001.otf",
     "static/media/d2l.png": "/unity-time-management/static/media/d2l.583fba97c7e7b745825b.png",
+    "static/media/unityLogo.png": "/unity-time-management/static/media/unityLogo.3699938e10f5031da506.png",
     "static/media/moodle.png": "/unity-time-management/static/media/moodle.f175ec5008736af410da.png",
     "index.html": "/unity-time-management/index.html",
-    "main.27382e68.css.map": "/unity-time-management/static/css/main.27382e68.css.map",
-    "main.c1087199.js.map": "/unity-time-management/static/js/main.c1087199.js.map",
+    "main.638a64ce.css.map": "/unity-time-management/static/css/main.638a64ce.css.map",
+    "main.11f8d36d.js.map": "/unity-time-management/static/js/main.11f8d36d.js.map",
     "787.ccc61277.chunk.js.map": "/unity-time-management/static/js/787.ccc61277.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.27382e68.css",
-    "static/js/main.c1087199.js"
+    "static/css/main.638a64ce.css",
+    "static/js/main.11f8d36d.js"
   ]
 }
