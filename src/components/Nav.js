@@ -51,7 +51,7 @@ const Nav = () => {
         <nav ref={navRef} className='navBar'>
             <div className='navLeft'>
                 <img src={unityLogo} alt='Unity Logo'></img>
-                <h1 className='title'>nity</h1>
+                <h1 className='title'>Unity</h1>
             </div>
             <div className='navRight'>
                 <button onClick={handleGetStartedClick} className='getStartedBtn'><h3>Get Started</h3></button>
