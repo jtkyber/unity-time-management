@@ -8,7 +8,7 @@ $transitionTime: 0.2s;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    padding: 0 2rem;
+    padding: 0 Min(2rem, 5%);
     z-index: 100;
     background-color: rgba($color: #ffffff, $alpha: 1.0);
     transition: transform $transitionTime, background-color $transitionTime;
@@ -27,11 +27,11 @@ $transitionTime: 0.2s;
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        margin-left: -0.5rem;
 
         img {
             width: 3.5rem;
             height: auto;
-            // transform: translateX(20%);
         }
 
         .title {
