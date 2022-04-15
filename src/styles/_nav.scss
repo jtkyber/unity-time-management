@@ -29,13 +29,14 @@ $transitionTime: 0.2s;
         align-items: center;
 
         img {
-            width: 5rem;
+            width: 4.5rem;
             height: auto;
             transform: translateX(20%);
         }
 
         .title {
-            color: rgba($color: #30A7A9, $alpha: 1.0);;
+            color: rgba($color: #30A7A9, $alpha: 1.0);
+            color: linear-gradient;
             font-size: 2.5rem;
             transition: color $transitionTime;
         }
