@@ -11,7 +11,6 @@ const GetStarted = () => {
             <form onSubmit={submitEmail} className='getStartedForm'>
                 <h1 className='exitBtn'>x</h1>
                 <h1 className='signUpText'>Enter your email to start using Unity</h1>
-                <label htmlFor='email'>Email</label>
                 <div className='emailInputSection'>
                     <input placeholder='Enter your email' type='text' id='email'></input>
                     <button className='signUpBtn'><h3>Sign up</h3></button>

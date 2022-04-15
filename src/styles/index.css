@@ -59,7 +59,7 @@ code {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 2rem 0 2rem;
+  padding: 0 2rem 0 0;
   z-index: 100;
   background-color: white;
   -webkit-transition: background-color 0.2s, -webkit-transform 0.2s;
@@ -494,7 +494,7 @@ code {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 4rem;
+  min-height: 4rem;
   width: 100%;
 }
 
@@ -508,7 +508,7 @@ code {
           box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.3);
   font-size: 1rem;
   font-weight: 600;
-  padding: 0 2rem;
+  padding: 0 22% 0 2rem;
   outline: none;
 }
 
@@ -548,7 +548,12 @@ code {
   background-color: #4e4e4e;
 }
 
-.getStartedContainer .getStartedForm label {
-  font-size: 1.5rem;
+@media screen and (max-width: 400px) {
+  .getStartedContainer .getStartedForm .emailInputSection {
+    min-height: 3rem;
+  }
+  .getStartedContainer .getStartedForm .emailInputSection input {
+    padding: 0 22% 0 1rem;
+  }
 }
 /*# sourceMappingURL=index.css.map */

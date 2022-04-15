@@ -43,7 +43,7 @@
             flex-flow: row nowrap;
             justify-content: center;
             align-items: center;
-            height: 4rem;
+            min-height: 4rem;
             width: 100%;
 
             input {
@@ -55,7 +55,7 @@
                 box-shadow: 0 0 0.5rem 0 rgba($color: #000000, $alpha: 0.3);
                 font-size: 1rem;
                 font-weight: 600;
-                padding: 0 2rem;
+                padding: 0 22% 0 2rem;
                 outline: none;
 
                 &:focus {
@@ -82,10 +82,40 @@
                 }
             }
         }
+    }
+}
 
+@media screen and (max-width: 400px) {
+    .getStartedContainer {
+    
+        .getStartedForm {
+    
+            .exitBtn {
 
-        label {
-            font-size: 1.5rem;
+            }
+    
+            .signUpText {
+                
+            }
+    
+            .emailInputSection {
+                min-height: 3rem;
+                input {
+                    padding: 0 22% 0 1rem;
+    
+                    &:focus {
+                        
+                    }
+                    
+                    &::placeholder {
+                        
+                    }
+                }
+    
+                button {
+                    
+                }
+            }
         }
     }
 }
