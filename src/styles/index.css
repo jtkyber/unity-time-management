@@ -27,6 +27,10 @@ button *, label {
   font-family: GilroyLight;
 }
 
+button {
+  cursor: pointer;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
@@ -57,7 +61,7 @@ code {
           align-items: center;
   padding: 0 2rem 0 2rem;
   z-index: 100;
-  background-color: #30a7a9;
+  background-color: white;
   -webkit-transition: background-color 0.2s, -webkit-transform 0.2s;
   transition: background-color 0.2s, -webkit-transform 0.2s;
   transition: transform 0.2s, background-color 0.2s;
@@ -70,7 +74,9 @@ code {
 }
 
 .navBar.notAtTop {
-  background-color: rgba(48, 167, 169, 0.6);
+  background-color: rgba(255, 255, 255, 0.6);
+  -webkit-box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.4);
 }
 
 .navBar .navLeft {
@@ -81,11 +87,21 @@ code {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navBar .navLeft img {
+  width: 5rem;
+  height: auto;
+  -webkit-transform: translateX(20%);
+          transform: translateX(20%);
 }
 
 .navBar .navLeft .title {
-  color: white;
-  font-size: 2rem;
+  color: #30a7a9;
+  font-size: 2.5rem;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
@@ -98,6 +114,9 @@ code {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navBar .navRight .getStartedBtn {
@@ -105,14 +124,13 @@ code {
   height: 3rem;
   border: none;
   border-radius: 2rem;
-  cursor: pointer;
-  background-color: white;
+  background-color: #30a7a9;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
 
 .navBar .navRight .getStartedBtn h3 {
-  color: black;
+  color: white;
 }
 
 .navBar .navRight .getStartedBtn:hover {
@@ -399,9 +417,12 @@ code {
 }
 
 .getStartedContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
@@ -412,13 +433,13 @@ code {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: calc(100vh - 6rem);
-  width: 100%;
-  background-color: #d7e4e4;
+  background-color: rgba(0, 0, 0, 0.5);
   gap: 2rem;
+  z-index: 1000;
 }
 
 .getStartedContainer .getStartedForm {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -433,26 +454,98 @@ code {
       -ms-flex-align: center;
           align-items: center;
   gap: 0.8rem;
-  border: 2px solid black;
-  border-radius: 1rem;
-  padding: 4rem 4rem;
+  border-radius: 2rem;
+  padding: 4rem 2rem;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   max-height: 90%;
-  width: 40rem;
+  width: 30rem;
   max-width: 90%;
   overflow: auto;
+  background-color: white;
 }
 
-.getStartedContainer .getStartedForm h1 {
+.getStartedContainer .getStartedForm .exitBtn {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-family: GilroyLight;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.getStartedContainer .getStartedForm .signUpText {
   margin-bottom: 2rem;
   text-align: center;
 }
 
-.getStartedContainer .getStartedForm input {
-  padding: 0.5rem 1rem;
+.getStartedContainer .getStartedForm .emailInputSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4rem;
   width: 100%;
+}
+
+.getStartedContainer .getStartedForm .emailInputSection input {
+  padding: 0.5rem 1rem;
+  width: 80%;
+  height: 100%;
+  border-radius: 2rem;
+  border: none;
+  -webkit-box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.3);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0 2rem;
+  outline: none;
+}
+
+.getStartedContainer .getStartedForm .emailInputSection input:focus {
+  border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.getStartedContainer .getStartedForm .emailInputSection input::-webkit-input-placeholder {
+  opacity: 0.6;
+}
+
+.getStartedContainer .getStartedForm .emailInputSection input:-ms-input-placeholder {
+  opacity: 0.6;
+}
+
+.getStartedContainer .getStartedForm .emailInputSection input::-ms-input-placeholder {
+  opacity: 0.6;
+}
+
+.getStartedContainer .getStartedForm .emailInputSection input::placeholder {
+  opacity: 0.6;
+}
+
+.getStartedContainer .getStartedForm .emailInputSection button {
+  width: 30%;
+  height: 100%;
+  border-radius: 2rem;
+  margin-left: -20%;
+  color: white;
+  background-color: black;
+  border: none;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.getStartedContainer .getStartedForm .emailInputSection button:hover {
+  background-color: #4e4e4e;
 }
 
 .getStartedContainer .getStartedForm label {

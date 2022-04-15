@@ -10,7 +10,7 @@ $transitionTime: 0.2s;
     align-items: center;
     padding: 0 2rem 0 2rem;
     z-index: 100;
-    background-color: rgba($color: #30A7A9, $alpha: 1.0);
+    background-color: rgba($color: #ffffff, $alpha: 1.0);
     transition: transform $transitionTime, background-color $transitionTime;
 
     &.scrolled {
@@ -18,17 +18,25 @@ $transitionTime: 0.2s;
     }
 
     &.notAtTop {
-        background-color: rgba($color: #30A7A9, $alpha: 0.6);
+        background-color: rgba($color: #ffffff, $alpha: 0.6);
+        box-shadow: 0 0 1rem 0 rgba($color: #000000, $alpha: 0.4);;
     }
     
     .navLeft {
         width: 100%;
         display: flex;
         justify-content: flex-start;
+        align-items: center;
+
+        img {
+            width: 5rem;
+            height: auto;
+            transform: translateX(20%);
+        }
 
         .title {
-            color: white;
-            font-size: 2rem;
+            color: rgba($color: #30A7A9, $alpha: 1.0);;
+            font-size: 2.5rem;
             transition: color $transitionTime;
         }
     }
@@ -37,18 +45,18 @@ $transitionTime: 0.2s;
         width: 100%;
         display: flex;
         justify-content: flex-end;
+        align-items: center;
 
         .getStartedBtn {
             width: 9rem;
             height: 3rem;
             border: none;
             border-radius: 2rem;
-            cursor: pointer;
-            background-color: rgba($color: #ffffff, $alpha: 1.0);
+            background-color: rgba($color: #30A7A9, $alpha: 1.0);
             transition: opacity 0.2s;
 
             h3 {
-                color: black;
+                color: white;
             }
 
             &:hover {

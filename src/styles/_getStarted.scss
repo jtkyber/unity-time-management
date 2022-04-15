@@ -1,38 +1,88 @@
 .getStartedContainer {
-    display: flex;
+    @include alignAbs;
+    display: none;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    height: $getStartedHeight;
-    width: 100%;
-    background-color: rgba($color: #D7E4E4, $alpha: 1.0);
+    background-color: rgba($color: #000000, $alpha: 0.5);
     gap: 2rem;
-
+    z-index: 1000;
 
     .getStartedForm {
+        position: relative;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
         gap: 0.8rem;
-        border: 2px solid black;
-        border-radius: 1rem;
-        padding: 4rem 4rem;
+        border-radius: 2rem;
+        padding: 4rem 2rem;
         height: max-content;
         max-height: 90%;
-        width: 40rem;
+        width: 30rem;
         max-width: 90%;
         overflow: auto;
+        background-color: rgba($color: #ffffff, $alpha: 1.0);
 
-        h1 {
+        .exitBtn {
+            position: absolute;
+            top: 1rem;
+            right: 1.5rem;
+            font-family: GilroyLight;
+            font-weight: 400;
+            cursor: pointer;
+        }
+
+        .signUpText {
             margin-bottom: 2rem;
             text-align: center;
         }
 
-        input {
-            padding: 0.5rem 1rem;
+        .emailInputSection {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            height: 4rem;
             width: 100%;
+
+            input {
+                padding: 0.5rem 1rem;
+                width: 80%;
+                height: 100%;
+                border-radius: 2rem;
+                border: none;
+                box-shadow: 0 0 0.5rem 0 rgba($color: #000000, $alpha: 0.3);
+                font-size: 1rem;
+                font-weight: 600;
+                padding: 0 2rem;
+                outline: none;
+
+                &:focus {
+                    border: 1px solid rgba($color: #000000, $alpha: 0.6);
+                }
+                
+                &::placeholder {
+                    opacity: 0.6;
+                }
+            }
+
+            button {
+                width: 30%;
+                height: 100%;
+                border-radius: 2rem;
+                margin-left: -20%;
+                color: rgba($color: #ffffff, $alpha: 1.0);
+                background-color: rgba($color: #000000, $alpha: 1.0);
+                border: none;
+                transition: background-color 0.2s;
+
+                &:hover {
+                    background-color: rgba($color: #4e4e4e, $alpha: 1.0);
+                }
+            }
         }
+
 
         label {
             font-size: 1.5rem;

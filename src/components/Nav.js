@@ -1,25 +1,36 @@
 import React, { useEffect, useState, useRef } from 'react';
+import unityLogo from '../assets/unityLogo.png';
 
-const Nav = ({ route, setRoute }) => {
+const Nav = () => {
     const navRef = useRef(null);
     const appContainerRef = useRef(null);
     const introContainerRef = useRef(null);
+    const getStartedContainer = useRef(null);
+
     const [introTop, setIntroTop] = useState(0);
 
     useEffect(() => {
         appContainerRef.current = document.querySelector('.appContainer');
         introContainerRef.current = document.querySelector('.introContainer');
+        getStartedContainer.current = document.querySelector('.getStartedContainer');
+
 
         appContainerRef.current.addEventListener('scroll', changeNavStyle);
+        getStartedContainer.current.addEventListener('click', hideGetStartedModal);
 
         return () => {
             appContainerRef.current.removeEventListener('scroll', changeNavStyle);
+            getStartedContainer.current.removeEventListener('click', hideGetStartedModal);
+    }
+    }, [introTop])
+
+    const hideGetStartedModal = (e) => {
+        if (e.target.classList.contains('getStartedContainer') || e.target.classList.contains('exitBtn')) {
+            getStartedContainer.current.style.setProperty('display', 'none');
         }
-    }, [introTop, route])
+    }
 
     const changeNavStyle = () => {
-        if (route !== 'index') return;
-
         const newIntroTop = introContainerRef.current.getBoundingClientRect().top;
         const isScrolled = (newIntroTop < introTop) && newIntroTop <= 0;
         const notAtTop = (newIntroTop < 0);
@@ -33,20 +44,17 @@ const Nav = ({ route, setRoute }) => {
     }
 
     const handleGetStartedClick = (e) => {
-        setRoute(route === 'index' ? 'getStarted' : 'index')
+        getStartedContainer.current.style.setProperty('display', 'flex');
     }
 
     return (
         <nav ref={navRef} className='navBar'>
             <div className='navLeft'>
-                <h1 className='title'>Unity</h1>
+                <img src={unityLogo} alt='Unity Logo'></img>
+                <h1 className='title'>nity</h1>
             </div>
             <div className='navRight'>
-                <button 
-                    onClick={handleGetStartedClick} 
-                    className={'getStartedBtn'}>
-                    <h3>{`${route === 'index' ? 'Get Started' : 'Back'}`}</h3>
-                </button>
+                <button onClick={handleGetStartedClick} className='getStartedBtn'><h3>Get Started</h3></button>
             </div>
         </nav>
     );
