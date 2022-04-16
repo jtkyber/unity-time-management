@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/unity-time-management/static/css/main.7fcf28dd.css",
-    "main.js": "/unity-time-management/static/js/main.6e5cf1de.js",
+    "main.css": "/unity-time-management/static/css/main.db5496a6.css",
+    "main.js": "/unity-time-management/static/js/main.faff28fa.js",
     "static/js/787.ccc61277.chunk.js": "/unity-time-management/static/js/787.ccc61277.chunk.js",
     "static/media/introBg.jpg": "/unity-time-management/static/media/introBg.adc9dbe6481c20081ecc.jpg",
     "static/media/blackboard.png": "/unity-time-management/static/media/blackboard.a2be3d65230843070691.png",
@@ -9,15 +9,15 @@
     "static/media/Gilroy-ExtraBold.otf": "/unity-time-management/static/media/Gilroy-ExtraBold.0094146a0505298ed06a.otf",
     "static/media/Gilroy-Light.otf": "/unity-time-management/static/media/Gilroy-Light.cc7ab55d27205bd64001.otf",
     "static/media/d2l.png": "/unity-time-management/static/media/d2l.583fba97c7e7b745825b.png",
-    "static/media/unityLogo.png": "/unity-time-management/static/media/unityLogo.3699938e10f5031da506.png",
     "static/media/moodle.png": "/unity-time-management/static/media/moodle.f175ec5008736af410da.png",
+    "static/media/unityLogo.svg": "/unity-time-management/static/media/unityLogo.22f81001292f359a1236badc809ad921.svg",
     "index.html": "/unity-time-management/index.html",
-    "main.7fcf28dd.css.map": "/unity-time-management/static/css/main.7fcf28dd.css.map",
-    "main.6e5cf1de.js.map": "/unity-time-management/static/js/main.6e5cf1de.js.map",
+    "main.db5496a6.css.map": "/unity-time-management/static/css/main.db5496a6.css.map",
+    "main.faff28fa.js.map": "/unity-time-management/static/js/main.faff28fa.js.map",
     "787.ccc61277.chunk.js.map": "/unity-time-management/static/js/787.ccc61277.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7fcf28dd.css",
-    "static/js/main.6e5cf1de.js"
+    "static/css/main.db5496a6.css",
+    "static/js/main.faff28fa.js"
   ]
 }
