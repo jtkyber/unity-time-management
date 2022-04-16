@@ -98,6 +98,66 @@ code {
   height: auto;
 }
 
+.navBar .navLeft svg {
+  width: 3rem;
+  height: auto;
+}
+
+.navBar .navLeft svg stop {
+  -webkit-transition: stop-color 0.2s ease-out;
+  transition: stop-color 0.2s ease-out;
+}
+
+.navBar .navLeft svg #paint0_linear_2_10 {
+  --color-stop-1: #446987;
+  --color-stop-2: #2FCCBE;
+}
+
+.navBar .navLeft svg #paint1_linear_2_10 {
+  --color-stop-1: #29CAB9;
+  --color-stop-2: #446987;
+}
+
+.navBar .navLeft svg #paint2_linear_2_10 {
+  --color-stop-1: #557EA4;
+  --color-stop-2: #2FCCBE;
+}
+
+.navBar .navLeft svg path {
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.navBar .navLeft svg path:nth-child(3) {
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+}
+
+.navBar .navLeft svg path:nth-child(1) {
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+}
+
+.navBar .navLeft svg path:nth-child(2) {
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+}
+
+.navBar .navLeft svg:hover #paint0_linear_2_10 {
+  --color-stop-2: #446987;
+  --color-stop-1: #2FCCBE;
+}
+
+.navBar .navLeft svg:hover #paint1_linear_2_10 {
+  --color-stop-2: #29CAB9;
+  --color-stop-1: #446987;
+}
+
+.navBar .navLeft svg:hover #paint2_linear_2_10 {
+  --color-stop-2: #557EA4;
+  --color-stop-1: #2FCCBE;
+}
+
 .navBar .navLeft .title {
   color: #00a8a8;
   font-family: GilroyLight;

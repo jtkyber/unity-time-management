@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
+import UnityLogo from './UnityLogo';
 import unityLogo from '../assets/unityLogo.svg';
 
 const Nav = () => {
@@ -50,7 +51,8 @@ const Nav = () => {
     return (
         <nav ref={navRef} className='navBar'>
             <div className='navLeft'>
-                <img src={unityLogo} alt='Unity Logo'></img>
+                {/* <img src={unityLogo} alt='Unity Logo'></img> */}
+                <UnityLogo />
                 <h1 className='title'>Unity</h1>
             </div>
             <div className='navRight'>
