@@ -14,7 +14,7 @@ const Intro = () => {
             }
         }, 10);
     }, [])
-
+    
     return (
         <div className='introContainer'>
             <div className='introBgContainer'></div>
