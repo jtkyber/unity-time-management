@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/unity-time-management/static/css/main.db5496a6.css",
+    "main.css": "/unity-time-management/static/css/main.ba015852.css",
     "main.js": "/unity-time-management/static/js/main.faff28fa.js",
     "static/js/787.ccc61277.chunk.js": "/unity-time-management/static/js/787.ccc61277.chunk.js",
     "static/media/introBg.jpg": "/unity-time-management/static/media/introBg.adc9dbe6481c20081ecc.jpg",
@@ -12,12 +12,12 @@
     "static/media/moodle.png": "/unity-time-management/static/media/moodle.f175ec5008736af410da.png",
     "static/media/unityLogo.svg": "/unity-time-management/static/media/unityLogo.22f81001292f359a1236badc809ad921.svg",
     "index.html": "/unity-time-management/index.html",
-    "main.db5496a6.css.map": "/unity-time-management/static/css/main.db5496a6.css.map",
+    "main.ba015852.css.map": "/unity-time-management/static/css/main.ba015852.css.map",
     "main.faff28fa.js.map": "/unity-time-management/static/js/main.faff28fa.js.map",
     "787.ccc61277.chunk.js.map": "/unity-time-management/static/js/787.ccc61277.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.db5496a6.css",
+    "static/css/main.ba015852.css",
     "static/js/main.faff28fa.js"
   ]
 }
