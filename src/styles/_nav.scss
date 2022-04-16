@@ -38,9 +38,9 @@ $transitionTime: 0.2s;
             width: 3rem;
             height: auto;
 
-            stop {
-                transition: stop-color 0.2s ease-out;
-            }
+            // stop {
+            //     transition: stop-color 0.2s ease-out;
+            // }
 
             #paint0_linear_2_10 {
                 --color-stop-1: #446987;
@@ -55,45 +55,33 @@ $transitionTime: 0.2s;
                 --color-stop-2: #2FCCBE;
             }
 
-            path {
-                transition: all 0.2s ease-out;
-                &:nth-child(3) {
-                    transform-origin: 50% 50%;
-                }
-                &:nth-child(1) {
-                    transform-origin: 50% 50%;
-                }
-                &:nth-child(2) {
-                    transform-origin: 50% 50%;
-                }
-            }
+            // path {
+            //     transition: all 0.2s ease-out;
+            //     &:nth-child(3) {
+            //         transform-origin: 50% 50%;
+            //     }
+            //     &:nth-child(1) {
+            //         transform-origin: 50% 50%;
+            //     }
+            //     &:nth-child(2) {
+            //         transform-origin: 50% 50%;
+            //     }
+            // }
 
-            &:hover {
-                #paint0_linear_2_10 {
-                    --color-stop-2: #446987;
-                    --color-stop-1: #2FCCBE;
-                }
-                #paint1_linear_2_10 {
-                    --color-stop-2: #29CAB9;
-                    --color-stop-1: #446987;
-                }
-                #paint2_linear_2_10 {
-                    --color-stop-2: #557EA4;
-                    --color-stop-1: #2FCCBE;
-                }
-
-                // path {
-                //     &:nth-child(3) {
-                //         transform: translateX(13%);
-                //     }
-                //     &:nth-child(1) {
-                //         transform: rotate(-20deg);
-                //     }
-                //     &:nth-child(2) {
-                //         transform: translateX(-13%);
-                //     }
-                // }
-            }
+            // &:hover {
+            //     #paint0_linear_2_10 {
+            //         --color-stop-2: #446987;
+            //         --color-stop-1: #2FCCBE;
+            //     }
+            //     #paint1_linear_2_10 {
+            //         --color-stop-2: #29CAB9;
+            //         --color-stop-1: #446987;
+            //     }
+            //     #paint2_linear_2_10 {
+            //         --color-stop-2: #557EA4;
+            //         --color-stop-1: #2FCCBE;
+            //     }
+            // }
         }
 
         .title {

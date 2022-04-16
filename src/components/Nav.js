@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
 import UnityLogo from './UnityLogo';
-import unityLogo from '../assets/unityLogo.svg';
 
 const Nav = () => {
     const navRef = useRef(null);

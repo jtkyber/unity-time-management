@@ -103,11 +103,6 @@ code {
   height: auto;
 }
 
-.navBar .navLeft svg stop {
-  -webkit-transition: stop-color 0.2s ease-out;
-  transition: stop-color 0.2s ease-out;
-}
-
 .navBar .navLeft svg #paint0_linear_2_10 {
   --color-stop-1: #446987;
   --color-stop-2: #2FCCBE;
@@ -121,41 +116,6 @@ code {
 .navBar .navLeft svg #paint2_linear_2_10 {
   --color-stop-1: #557EA4;
   --color-stop-2: #2FCCBE;
-}
-
-.navBar .navLeft svg path {
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-}
-
-.navBar .navLeft svg path:nth-child(3) {
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
-}
-
-.navBar .navLeft svg path:nth-child(1) {
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
-}
-
-.navBar .navLeft svg path:nth-child(2) {
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
-}
-
-.navBar .navLeft svg:hover #paint0_linear_2_10 {
-  --color-stop-2: #446987;
-  --color-stop-1: #2FCCBE;
-}
-
-.navBar .navLeft svg:hover #paint1_linear_2_10 {
-  --color-stop-2: #29CAB9;
-  --color-stop-1: #446987;
-}
-
-.navBar .navLeft svg:hover #paint2_linear_2_10 {
-  --color-stop-2: #557EA4;
-  --color-stop-1: #2FCCBE;
 }
 
 .navBar .navLeft .title {
@@ -255,8 +215,8 @@ code {
 }
 
 .introContainer .introTextContainer h1 span.wordPop {
-  -webkit-animation: popWord 0.6s ease-out 1s forwards;
-          animation: popWord 0.6s ease-out 1s forwards;
+  -webkit-animation: popWord 0.6s ease-in 1s forwards;
+          animation: popWord 0.6s ease-in 1s forwards;
 }
 
 @-webkit-keyframes popWord {
@@ -264,13 +224,10 @@ code {
     -webkit-transform: scaleY(0.1);
             transform: scaleY(0.1);
   }
-  74% {
-    color: #0d0d0d;
-  }
   75% {
     -webkit-transform: scaleY(1.8);
             transform: scaleY(1.8);
-    color: #00a8a8;
+    color: #0d0d0d;
   }
   100% {
     -webkit-transform: scaleY(1);
@@ -284,13 +241,10 @@ code {
     -webkit-transform: scaleY(0.1);
             transform: scaleY(0.1);
   }
-  74% {
-    color: #0d0d0d;
-  }
   75% {
     -webkit-transform: scaleY(1.8);
             transform: scaleY(1.8);
-    color: #00a8a8;
+    color: #0d0d0d;
   }
   100% {
     -webkit-transform: scaleY(1);
@@ -315,12 +269,6 @@ code {
   -ms-flex-item-align: center;
       align-self: center;
   padding: 8rem 2rem;
-}
-
-.introContainer .introPicContainer img {
-  width: 100%;
-  max-width: 40em;
-  height: auto;
 }
 
 .introContainer .introPicContainer iframe {
