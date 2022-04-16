@@ -1,6 +1,6 @@
 .aboutContainer {
     height: max-content;
-    background-color: rgba($color: #d7e4e4, $alpha: 1.0);
+    background-color: rgba($color: $darkPrimaryColor, $alpha: 0.2);
     padding: 4rem 2rem;
     display: flex;
     flex-flow: column nowrap;
@@ -10,7 +10,7 @@
     h1 {
         text-align: center;
         font-size: 2.5rem;
-        color: rgba($color: #ED6061, $alpha: 1.0);
+        color: rgba($color: $primaryColor, $alpha: 1.0);
     }
 
     .aboutSummary {
@@ -23,6 +23,7 @@
             font-size: 1.5rem;
             text-align: center;
             line-height: 2rem;
+            color: rgba($color: #000000, $alpha: 1.0);
         }
     }
 }

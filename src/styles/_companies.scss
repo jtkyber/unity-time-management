@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     padding: 6rem 2rem;
-    background-color: rgba($color: #daf6f6, $alpha: 0.2);
+    background-color: rgba($color: #ffffff, $alpha: 0.2);
     gap: 4rem;
 
     h1 {
@@ -14,7 +14,7 @@
         text-align: center;
         font-size: 3.5rem;
         font-weight: 800;
-        color: rgba($color: #179494, $alpha: 0.8);
+        color: rgba($color: $primaryColor, $alpha: 1.0);
     }
 
     .marqueeContainer {

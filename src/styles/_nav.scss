@@ -30,12 +30,12 @@ $transitionTime: 0.2s;
         margin-left: -0.5rem;
 
         img {
-            width: 3.5rem;
+            width: 3rem;
             height: auto;
         }
 
         .title {
-            color: rgba($color: #30A7A9, $alpha: 1.0);
+            color: rgba($color: $primaryColor, $alpha: 1.0);
             font-family: GilroyLight;
             font-size: 2.2rem;
             transition: color $transitionTime;
@@ -53,7 +53,7 @@ $transitionTime: 0.2s;
             height: 3rem;
             border: none;
             border-radius: 2rem;
-            background-color: rgba($color: #30A7A9, $alpha: 1.0);
+            background-color: rgba($color: $primaryColor, $alpha: 1.0);
             transition: opacity 0.2s;
 
             h3 {

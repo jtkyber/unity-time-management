@@ -94,12 +94,12 @@ code {
 }
 
 .navBar .navLeft img {
-  width: 3.5rem;
+  width: 3rem;
   height: auto;
 }
 
 .navBar .navLeft .title {
-  color: #30a7a9;
+  color: #00a8a8;
   font-family: GilroyLight;
   font-size: 2.2rem;
   -webkit-transition: color 0.2s;
@@ -124,7 +124,7 @@ code {
   height: 3rem;
   border: none;
   border-radius: 2rem;
-  background-color: #30a7a9;
+  background-color: #00a8a8;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
@@ -141,8 +141,8 @@ code {
   position: relative;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 0.9fr 1.1fr;
+      grid-template-columns: 0.9fr 1.1fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
       grid-template-areas: "introTextContainer introPicContainer";
@@ -163,7 +163,7 @@ code {
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
-  opacity: 0.4;
+  opacity: 0.3;
 }
 
 .introContainer .introTextContainer {
@@ -187,11 +187,56 @@ code {
   font-size: 3rem;
   font-weight: 800;
   width: 26rem;
-  color: #403b7c;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .introContainer .introTextContainer h1 span {
-  color: #d32b2b;
+  display: inline-block;
+}
+
+.introContainer .introTextContainer h1 span.wordPop {
+  -webkit-animation: popWord 0.8s ease-out forwards;
+          animation: popWord 0.8s ease-out forwards;
+}
+
+@-webkit-keyframes popWord {
+  50% {
+    -webkit-transform: scaleY(0.2);
+            transform: scaleY(0.2);
+  }
+  74% {
+    color: rgba(0, 0, 0, 0.8);
+  }
+  75% {
+    -webkit-transform: scaleY(1.8);
+            transform: scaleY(1.8);
+    color: #00a8a8;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    color: #00a8a8;
+  }
+}
+
+@keyframes popWord {
+  50% {
+    -webkit-transform: scaleY(0.2);
+            transform: scaleY(0.2);
+  }
+  74% {
+    color: rgba(0, 0, 0, 0.8);
+  }
+  75% {
+    -webkit-transform: scaleY(1.8);
+            transform: scaleY(1.8);
+    color: #00a8a8;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    color: #00a8a8;
+  }
 }
 
 .introContainer .introPicContainer {
@@ -287,7 +332,7 @@ code {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 6rem 2rem;
-  background-color: rgba(218, 246, 246, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   gap: 4rem;
 }
 
@@ -296,7 +341,7 @@ code {
   text-align: center;
   font-size: 3.5rem;
   font-weight: 800;
-  color: rgba(23, 148, 148, 0.8);
+  color: #00a8a8;
 }
 
 .companiesContainer .marqueeContainer {
@@ -392,7 +437,7 @@ code {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  background-color: #d7e4e4;
+  background-color: rgba(9, 92, 92, 0.2);
   padding: 4rem 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -412,7 +457,7 @@ code {
 .aboutContainer h1 {
   text-align: center;
   font-size: 2.5rem;
-  color: #ed6061;
+  color: #00a8a8;
 }
 
 .aboutContainer .aboutSummary {
@@ -426,6 +471,7 @@ code {
   font-size: 1.5rem;
   text-align: center;
   line-height: 2rem;
+  color: black;
 }
 
 .getStartedContainer {
