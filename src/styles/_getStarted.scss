@@ -37,11 +37,13 @@
         .signUpText {
             // margin-bottom: 2rem;
             text-align: center;
+            user-select: none;
         }
 
         .numberSignedUp {
             color: rgba($color: $primaryColor, $alpha: 1.0);
             text-align: center;
+            user-select: none;
 
             span {
                 font-size: 1.5rem;
@@ -77,6 +79,7 @@
                 
                 &::placeholder {
                     opacity: 0.6;
+                    user-select: none;
                 }
             }
 
@@ -91,6 +94,10 @@
                 transition: background-color 0.2s;
                 z-index: 101;
 
+                h3 {
+                    user-select: none;
+                }
+
                 &:hover {
                     background-color: rgba($color: #4e4e4e, $alpha: 1.0);
                 }
@@ -103,6 +110,7 @@
             font-size: 0.9rem;
             font-family: GilroyLight;
             text-align: center;
+            user-select: none;
         }
 
         .signUpAlertText {
@@ -110,6 +118,7 @@
             font-size: 1rem;
             font-family: GilroyLight;
             text-align: center;
+            user-select: none;
         }
     }
 }
