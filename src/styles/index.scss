@@ -37,12 +37,6 @@ code {
     monospace;
 }
 
-$navHeight: 6rem;
-$getStartedHeight: calc(100vh - 6rem);
-$primaryColor: #00A8A8;
-$secondaryColor: #A81180;
-$darkPrimaryColor: #095C5C;
-
 
 @mixin alignAbs {
     position: absolute;
@@ -52,6 +46,7 @@ $darkPrimaryColor: #095C5C;
     height: 100%
 }
 
+@import './variables';
 @import './app';
 @import './nav';
 @import './intro';

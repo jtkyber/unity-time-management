@@ -1,6 +1,6 @@
 .getStartedContainer {
     @include alignAbs;
-    display: none;
+    display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
@@ -34,8 +34,17 @@
         }
 
         .signUpText {
-            margin-bottom: 2rem;
+            // margin-bottom: 2rem;
             text-align: center;
+        }
+
+        .numberSignedUp {
+            color: rgba($color: $primaryColor, $alpha: 1.0);
+            text-align: center;
+
+            span {
+                font-size: 1.5rem;
+            }
         }
 
         .emailInputSection {
@@ -45,6 +54,7 @@
             align-items: center;
             min-height: 4rem;
             width: 100%;
+            margin-top: 2rem;
 
             input {
                 padding: 0.5rem 1rem;
@@ -57,6 +67,8 @@
                 font-weight: 600;
                 padding: 0 22% 0 2rem;
                 outline: none;
+                z-index: 100;
+
 
                 &:focus {
                     border: 1px solid rgba($color: #000000, $alpha: 0.6);
@@ -76,45 +88,37 @@
                 background-color: rgba($color: #000000, $alpha: 1.0);
                 border: none;
                 transition: background-color 0.2s;
+                z-index: 101;
 
                 &:hover {
                     background-color: rgba($color: #4e4e4e, $alpha: 1.0);
                 }
             }
+
+        }
+
+        .freeSignUpText {
+            color: rgba($color: #000000, $alpha: 0.6);
+            font-size: 0.9rem;
+            font-family: GilroyLight;
+            text-align: center;
+        }
+
+        .signUpAlertText {
+            color: red;
+            font-size: 1rem;
+            font-family: GilroyLight;
+            text-align: center;
         }
     }
 }
 
 @media screen and (max-width: 400px) {
     .getStartedContainer {
-    
-        .getStartedForm {
-    
-            .exitBtn {
-
-            }
-    
-            .signUpText {
-                
-            }
-    
-            .emailInputSection {
-                min-height: 3rem;
-                input {
-                    padding: 0 22% 0 1rem;
-    
-                    &:focus {
-                        
-                    }
-                    
-                    &::placeholder {
-                        
-                    }
-                }
-    
-                button {
-                    
-                }
+        .emailInputSection {
+            min-height: 3rem;
+            input {
+                padding: 0 22% 0 1rem;
             }
         }
     }

@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import UnityLogo from './UnityLogo';
 
-const Nav = () => {
+const Nav = ({ setRoute }) => {
     const navRef = useRef(null);
     const appContainerRef = useRef(null);
     const introContainerRef = useRef(null);
@@ -16,17 +16,18 @@ const Nav = () => {
 
 
         appContainerRef.current.addEventListener('scroll', changeNavStyle);
-        getStartedContainer.current.addEventListener('click', hideGetStartedModal);
+        document.addEventListener('click', hideGetStartedModal);
 
         return () => {
             appContainerRef.current.removeEventListener('scroll', changeNavStyle);
-            getStartedContainer.current.removeEventListener('click', hideGetStartedModal);
+            document.removeEventListener('click', hideGetStartedModal);
     }
     }, [introTop])
 
     const hideGetStartedModal = (e) => {
         if (e.target.classList.contains('getStartedContainer') || e.target.classList.contains('exitBtn')) {
-            getStartedContainer.current.style.setProperty('display', 'none');
+            // getStartedContainer.current.style.setProperty('display', 'none');
+            setRoute('index');
         }
     }
 
@@ -44,7 +45,8 @@ const Nav = () => {
     }
 
     const handleGetStartedClick = (e) => {
-        getStartedContainer.current.style.setProperty('display', 'flex');
+        // getStartedContainer.current.style.setProperty('display', 'flex');
+        setRoute('signUp');
     }
 
     return (

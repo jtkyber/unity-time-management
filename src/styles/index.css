@@ -488,7 +488,9 @@ code {
   top: 0;
   width: 100%;
   height: 100%;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
@@ -542,8 +544,16 @@ code {
 }
 
 .getStartedContainer .getStartedForm .signUpText {
-  margin-bottom: 2rem;
   text-align: center;
+}
+
+.getStartedContainer .getStartedForm .numberSignedUp {
+  color: #00a8a8;
+  text-align: center;
+}
+
+.getStartedContainer .getStartedForm .numberSignedUp span {
+  font-size: 1.5rem;
 }
 
 .getStartedContainer .getStartedForm .emailInputSection {
@@ -562,6 +572,7 @@ code {
           align-items: center;
   min-height: 4rem;
   width: 100%;
+  margin-top: 2rem;
 }
 
 .getStartedContainer .getStartedForm .emailInputSection input {
@@ -576,6 +587,7 @@ code {
   font-weight: 600;
   padding: 0 22% 0 2rem;
   outline: none;
+  z-index: 100;
 }
 
 .getStartedContainer .getStartedForm .emailInputSection input:focus {
@@ -608,17 +620,32 @@ code {
   border: none;
   -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
+  z-index: 101;
 }
 
 .getStartedContainer .getStartedForm .emailInputSection button:hover {
   background-color: #4e4e4e;
 }
 
+.getStartedContainer .getStartedForm .freeSignUpText {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.9rem;
+  font-family: GilroyLight;
+  text-align: center;
+}
+
+.getStartedContainer .getStartedForm .signUpAlertText {
+  color: red;
+  font-size: 1rem;
+  font-family: GilroyLight;
+  text-align: center;
+}
+
 @media screen and (max-width: 400px) {
-  .getStartedContainer .getStartedForm .emailInputSection {
+  .getStartedContainer .emailInputSection {
     min-height: 3rem;
   }
-  .getStartedContainer .getStartedForm .emailInputSection input {
+  .getStartedContainer .emailInputSection input {
     padding: 0 22% 0 1rem;
   }
 }
